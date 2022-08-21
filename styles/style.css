@@ -2,9 +2,15 @@ h4{
     font-size: 24px;
     line-height: 32.78px;
 }
+h5{
+    font-size: 16px;
+    line-height: 21.86px;
+    color: #AFAFAF
+    ;
+}
 
 .header-title{
-    font-size: 64px;
+    font-size: 74px;
     font-family: 'Berkshire Swash', cursive;
     line-height: 94.41px;
     color: #FF5E19;
