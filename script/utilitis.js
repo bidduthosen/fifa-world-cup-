@@ -3,6 +3,10 @@ function getInputElementValueById(elementFieldId){
     const elementField = document.getElementById(elementFieldId);
     const elementFieldString = elementField.value ; 
     const elementValue = parseFloat(elementFieldString);
+    if(isNaN(elementValue)){
+        alert('pleassee provite a valid Number');
+        return;
+    }
     elementField.value = '';
     return elementValue;
 };
