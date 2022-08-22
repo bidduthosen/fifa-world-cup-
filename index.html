@@ -43,16 +43,18 @@
                 <div class="row align-items-start">
                     <div class="col-9">
                         <div class="row row-cols-1 row-cols-md-3 g-4">
+
                             <div class="col">
                               <div class="card bg-black text-white">
                                 <img src="images/Lionel-Messi.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                  <h4>Lionel Messi</h4>
+                                  <h4 id="players-name">Lionel Messi</h4>
                                   <p>28 Goals . 122 Assist</p>
-                                  <button class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
+                                  <button id="select-btn" class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
                                 </div>
                               </div>
                             </div>
+
                             <div class="col">
                               <div class="card bg-black text-white">
                                 <img src="images/Bruno-Fernandes.jpg" class="card-img-top" alt="...">
@@ -63,6 +65,7 @@
                                   </div>
                               </div>
                             </div>
+
                             <div class="col">
                               <div class="card bg-black text-white">
                                 <img src="images/Harry-Kane.jpg" class="card-img-top" alt="...">
@@ -73,6 +76,7 @@
                                   </div>
                               </div>
                             </div>
+                            
                             <div class="col">
                               <div class="card bg-black text-white">
                                 <img src="images/Joshua-Kimmich.jpg" class="card-img-top" alt="...">
@@ -110,15 +114,15 @@
                         <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col">
                               <div class="card h-100 bg-black text-white pt-2">
-                                <h3>Selected - V</h3>
+                                <h3>Selected - Five</h3>
                                 <hr>
-                                <ol class="list-group-numbered ">
-                                    <li class="list-group-item py-2 text-start">Lionel Messi</li>
-                                    <li class="list-group-item py-2 text-start">Bruno Fernandes</li>
-                                    <li class="list-group-item py-2 text-start">Harry Kane</li>
-                                    <li class="list-group-item py-2 text-start">Joshua Kimmich</li>
-                                    <li class="list-group-item py-2 text-start">Kevin-De Bruyne</li>
-                                    <li class="list-group-item py-2 text-start">Kylian Mbappe</li>
+                                <ol  class="list-group-numbered text-start order-list">
+                                    <li id="player-add" class="list-group-item py-2">Lionel Messi</li>
+                                    <li class="list-group-item py-2">Bruno Fernandes</li>
+                                    <li class="list-group-item py-2">Harry Kane</li>
+                                    <li class="list-group-item py-2">Joshua Kimmich</li>
+                                    <li class="list-group-item py-2">Kevin-De Bruyne</li>
+                                    <li class="list-group-item py-2">Kylian Mbappe</li>
                                 </ol>
                               </div>
                             </div>
@@ -130,31 +134,31 @@
 
                                 <div class="d-flex justify-content-between align-items-center px-3 py-3">
                                     <h5>Per Player</h5>
-                                    <input type="text" class="form-control w-50 bg-black text-white" placeholder="Amound">
+                                    <input id="par-player-input-field" type="text" class="form-control w-50 bg-black text-white" placeholder="Amound">
                                 </div>
 
-                                <button class="btn btn-primary mx-auto w-75" type="submit">Calculate</button>
+                                <button id="calculate-btn" class="btn btn-primary mx-auto w-75" type="submit">Calculate</button>
 
                                 <div class="d-flex justify-content-between align-items-center px-3 py-3">
                                     <h5>Player Expenses</h5>
-                                    <h5 class="text-white">$5000</h5>
+                                    <h5 class="text-white">$<span id="Player-expenses">0000</span></h5>
                                 </div>
 
                                 <div class="d-flex justify-content-between align-items-center px-3 py-2">
                                     <h5>Manager</h5>
-                                    <input type="text" class="form-control w-50 bg-black text-white" placeholder="Amound">
+                                    <input id="manager-budget-field" type="text" class="form-control w-50 bg-black text-white" placeholder="Amound">
                                 </div>
 
                                 <div class="d-flex justify-content-between align-items-center px-3 pb-4 ">
                                     <h5>Coach</h5>
-                                    <input type="text" class="form-control w-50 bg-black text-white" placeholder="Amound">
+                                    <input id="coach-budget-field" type="text" class="form-control w-50 bg-black text-white" placeholder="Amound">
                                 </div>
 
-                                <button class="btn btn-primary mx-auto w-75" type="submit">Calculate Total</button>
+                                <button id="calculate-total-btn" class="btn btn-primary mx-auto w-75" type="submit">Calculate Total</button>
 
                                 <div class="d-flex justify-content-between align-items-center px-3 pt-5">
                                     <h5>Total</h5>
-                                    <h5 class="text-warning">$11000</h5>
+                                    <h5 class="text-warning">$<span id="total-amound">00000</span></h5>
                                 </div>
                               </div>
                             </div>
@@ -173,5 +177,7 @@
 
     <!-- bootstrap js link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="script/utilitis.js"></script>
+    <script src="script/selected.js"></script>
 </body>
 </html>
