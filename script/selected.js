@@ -9,15 +9,23 @@ function addPlayeraElementById(player){
     };
 
     playerArray.push(playerobject);
-    document.getElementById('total-added-name').innerText = playerArray.length;
+    document.getElementById('total-add-list').innerText = playerArray.length;
 
     const selectPlayerName = document.getElementById('select-player-name');
+    if(playerArray.length <= 5){
+        const li = document.createElement('li');
+        selectPlayerName.appendChild(li);
+        li.innerHTML =`
+        <li class="list-group-item py-2 list-group-numbered">${playerName}</li>
+        `;
+        // disabled btn --
+        player.disabled = true;
 
-    const li = document.createElement('li');
-    li.innerHTML =`
-    <li class="list-group-item py-2 list-group-numbered">${playerName}</li>
-    `;
-    selectPlayerName.appendChild(li);
+    }
+    else{
+        alert('Select your five player done')
+    }
+
 };
 
 /*-----------------------
