@@ -11,7 +11,6 @@ function getTextElementValueById(elementId){
     const elementField = document.getElementById(elementId);
     const elementFieldString = elementField.innerText ; 
     const elementValue = parseFloat(elementFieldString);
-    elementField.value = '';
     return elementValue;
 };
 

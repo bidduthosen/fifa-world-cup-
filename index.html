@@ -23,6 +23,7 @@
   </head>
 </head>
 <body>
+  <!-- header part  -->
     <header>
         <section class="mb-5">
             <div class="conainer">
@@ -48,9 +49,9 @@
                               <div class="card bg-black text-white">
                                 <img src="images/Lionel-Messi.jpg" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
-                                  <h4 id="players-name">Lionel Messi</h4>
+                                  <h4>Lionel Messi</h4>
                                   <p>28 Goals . 122 Assist</p>
-                                  <button id="select-btn" class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
+                                  <button onclick="addPlayeraElementById(this)" class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
                                 </div>
                               </div>
                             </div>
@@ -61,7 +62,7 @@
                                 <div class="card-body text-center">
                                     <h4>Bruno Fernandes</h4>
                                     <p>23 Goals . 110 Assist</p>
-                                    <button class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
+                                    <button onclick="addPlayeraElementById(this)" class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
                                   </div>
                               </div>
                             </div>
@@ -72,7 +73,7 @@
                                 <div class="card-body text-center">
                                     <h4>Harry Kane</h4>
                                     <p>27 Goals . 89 Assist</p>
-                                    <button class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
+                                    <button onclick="addPlayeraElementById(this)" class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
                                   </div>
                               </div>
                             </div>
@@ -83,7 +84,7 @@
                                 <div class="card-body text-center">
                                     <h4>Joshua Kimmich</h4>
                                     <p>26 Goals . 80 Assist</p>
-                                    <button class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
+                                    <button onclick="addPlayeraElementById(this)" class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
                                   </div>
                               </div>
                             </div>
@@ -93,7 +94,7 @@
                                 <div class="card-body text-center">
                                     <h4>Kevin-De Bruyne</h4>
                                     <p>17 Goals . 57 Assist</p>
-                                    <button class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
+                                    <button onclick="addPlayeraElementById(this)" class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
                                   </div>
                               </div>
                             </div>
@@ -103,7 +104,7 @@
                                 <div class="card-body text-center">
                                     <h4>Kylian Mbappe</h4>
                                     <p>39 Goals . 180 Assist</p>
-                                    <button class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
+                                    <button onclick="addPlayeraElementById(this)" class="btn btn-primary mx-auto w-75" type="button">SELECT</button>
                                   </div>
                               </div>
                             </div>
@@ -114,15 +115,10 @@
                         <div class="row row-cols-1 row-cols-md-1 g-4">
                             <div class="col">
                               <div class="card h-100 bg-black text-white pt-2">
-                                <h3>Selected - Five</h3>
+                                <h3>Selected - Five (<span id="total-added-name">0</span>)</h3>
                                 <hr>
-                                <ol  class="list-group-numbered text-start order-list">
-                                    <li id="player-add" class="list-group-item py-2">Lionel Messi</li>
-                                    <li class="list-group-item py-2">Bruno Fernandes</li>
-                                    <li class="list-group-item py-2">Harry Kane</li>
-                                    <li class="list-group-item py-2">Joshua Kimmich</li>
-                                    <li class="list-group-item py-2">Kevin-De Bruyne</li>
-                                    <li class="list-group-item py-2">Kylian Mbappe</li>
+                                <ol id="select-player-name" class="text-start order-list">
+
                                 </ol>
                               </div>
                             </div>
@@ -177,6 +173,7 @@
 
     <!-- bootstrap js link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- script style -->
     <script src="script/utilitis.js"></script>
     <script src="script/selected.js"></script>
 </body>
